@@ -58,12 +58,12 @@
 
 	function finishGame() {
 		board.innerHTML = `<h1 class=score>Ваш счёт <span class="primary">${score}</span></h1>
-					<h2>Перзагрузка...</h2>`
+					<h2>Перезагрузка...</h2>`
 		
 		timeEl.parentNode.classList.add('hide')
-		setTimeout(() => {
-			document.location.reload()
-		}, 2000);
+		// setTimeout(() => {
+		// 	document.location.reload()
+		// }, 2000);
 	}
 
 	
@@ -80,6 +80,7 @@
 		circle.style.top = `${x}px`
 		circle.style.left = `${y}px`
 		circle.style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+		circle.style.boxShadow = '0 0 10px #fff'
 	}
 
 	function getRandomNumber(min, max) {
