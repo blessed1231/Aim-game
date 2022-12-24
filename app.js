@@ -61,9 +61,9 @@
 					<h2>Перезагрузка...</h2>`
 		
 		timeEl.parentNode.classList.add('hide')
-		// setTimeout(() => {
-		// 	document.location.reload()
-		// }, 2000);
+		setTimeout(() => {
+			document.location.reload()
+		}, 2000);
 	}
 
 	
